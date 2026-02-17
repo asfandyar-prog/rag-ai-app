@@ -1,8 +1,5 @@
 
 
-
-# backend.py (your code, just bug-fixed)
-
 from langchain_community.document_loaders import PyMuPDFLoader, TextLoader, DirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
