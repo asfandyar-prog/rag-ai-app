@@ -251,8 +251,7 @@ retriever = RetrieverAugmentedGeneration(vectorstore, embeddings_model)
 def reg_simple(query, retriever, llm, top_k=3):
     # retrieve context
     results = retriever.retrieve(query, top_k=top_k)
-    context = "\n\n".join([d["documents"] for d in results]) if results else "No context found"  # ✅ documents key
-
+    context = "\n\n".join([d["documents"] for d in results]) if results else "No context found"  # 
     prompt = f"""Answer the following question based on the context provided.
 
 Context:
